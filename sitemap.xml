@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://hiphopkingdom.netlify.app/</loc>
+    <loc>https://stirring-clafoutis-f41d94.netlify.app/</loc>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://hiphopkingdom.netlify.app/article-exemple.html</loc>
+    <loc>https://stirring-clafoutis-f41d94.netlify.app/article-exemple.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://stirring-clafoutis-f41d94.netlify.app/article-super7-ghostface.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://stirring-clafoutis-f41d94.netlify.app/article-technics-mk2.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>

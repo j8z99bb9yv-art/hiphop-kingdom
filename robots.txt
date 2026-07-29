@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://hiphopkingdom.netlify.app/sitemap.xml
+Sitemap: https://stirring-clafoutis-f41d94.netlify.app/sitemap.xml
