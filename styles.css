@@ -319,3 +319,82 @@ footer.site-footer .wrap{
   font-size:13px;
   color:var(--ink-faint);
 }
+
+/* ---------- visuels abstraits (sans droits d'auteur) ---------- */
+.cover-art{
+  position:relative;
+  height:132px;
+  border-radius:var(--radius-md);
+  margin-bottom:18px;
+  overflow:hidden;
+  background:var(--bg-soft);
+}
+.cover-art::before{
+  content:"";
+  position:absolute; inset:0;
+  background-image:
+    radial-gradient(circle at 78% 30%, rgba(0,0,0,0.06) 0 2px, transparent 2px),
+    radial-gradient(circle at 78% 30%, transparent 0 22px, rgba(0,0,0,0.05) 22px 23px, transparent 23px),
+    radial-gradient(circle at 78% 30%, transparent 0 34px, rgba(0,0,0,0.05) 34px 35px, transparent 35px),
+    radial-gradient(circle at 78% 30%, transparent 0 46px, rgba(0,0,0,0.05) 46px 47px, transparent 47px);
+}
+.cover-art::after{
+  content:"";
+  position:absolute; left:-20px; bottom:-30px;
+  width:120px; height:120px; border-radius:50%;
+  opacity:0.14;
+}
+.sleeve.cat-vinyles .cover-art{ background:linear-gradient(135deg, #eaf2ff, var(--bg-soft)); }
+.sleeve.cat-vinyles .cover-art::after{ background:var(--lbl-vinyles); }
+.sleeve.cat-chroniques .cover-art{ background:linear-gradient(135deg, #f1ecff, var(--bg-soft)); }
+.sleeve.cat-chroniques .cover-art::after{ background:var(--lbl-chroniques); }
+.sleeve.cat-livres .cover-art{ background:linear-gradient(135deg, #fff3e0, var(--bg-soft)); }
+.sleeve.cat-livres .cover-art::after{ background:var(--lbl-livres); }
+.sleeve.cat-objets .cover-art{ background:linear-gradient(135deg, #e8f9ed, var(--bg-soft)); }
+.sleeve.cat-objets .cover-art::after{ background:var(--lbl-objets); }
+
+.article-head .cover-art{ height:220px; margin:24px 0 0; }
+
+/* ---------- filtre de catégories ---------- */
+nav.main-nav a.active{ color:var(--ink); font-weight:700; }
+
+/* ---------- cartes "à venir" (non cliquables) ---------- */
+.sleeve.soon{ cursor:default; }
+.sleeve.soon:hover{ transform:none; box-shadow:none; }
+.sleeve.soon .meta{ color:var(--ink-faint); }
+.badge-soon{
+  display:inline-block;
+  font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:0.04em;
+  background:var(--bg); color:var(--ink-faint);
+  border:1px solid var(--divider);
+  border-radius:999px;
+  padding:3px 10px;
+  margin-left:8px;
+  vertical-align:middle;
+}
+
+/* ---------- récapitulatif de tous les articles (bas de site) ---------- */
+.site-index{
+  border-top:1px solid var(--divider);
+  padding:40px 0;
+}
+.site-index h2{
+  font-size:18px;
+  margin-bottom:16px;
+}
+.site-index ul{
+  list-style:none; margin:0; padding:0;
+  display:grid;
+  grid-template-columns:repeat(2, 1fr);
+  gap:8px 24px;
+}
+@media (max-width:640px){ .site-index ul{ grid-template-columns:1fr; } }
+.site-index a{
+  display:block;
+  text-decoration:none;
+  font-size:14.5px;
+  color:var(--ink-soft);
+  padding:6px 0;
+  border-bottom:1px solid var(--divider);
+}
+.site-index a:hover{ color:var(--ink); }
