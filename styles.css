@@ -24,6 +24,8 @@
   --lbl-chroniques: #7d5fff;
   --lbl-livres:     #ff9500;
   --lbl-objets:     #34c759;
+  --lbl-dj:         #00838f;
+  --lbl-graffiti:   #c2185b;
 
   --radius-lg: 22px;
   --radius-md: 14px;
@@ -208,6 +210,10 @@ nav.main-nav a:hover{ color:var(--ink); }
 .sleeve.cat-livres .catalog::before{ background:var(--lbl-livres); }
 .sleeve.cat-objets .catalog{ color:var(--lbl-objets); }
 .sleeve.cat-objets .catalog::before{ background:var(--lbl-objets); }
+.sleeve.cat-dj .catalog{ color:var(--lbl-dj); }
+.sleeve.cat-dj .catalog::before{ background:var(--lbl-dj); }
+.sleeve.cat-graffiti .catalog{ color:var(--lbl-graffiti); }
+.sleeve.cat-graffiti .catalog::before{ background:var(--lbl-graffiti); }
 
 .sleeve h3{
   font-size:21px;

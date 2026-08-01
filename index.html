@@ -66,6 +66,8 @@
       <a href="#" data-filter="chroniques" class="tag-chroniques">Chroniques</a>
       <a href="#" data-filter="livres" class="tag-livres">Livres</a>
       <a href="#" data-filter="objets" class="tag-objets">Objets</a>
+      <a href="#" data-filter="dj" class="tag-dj">DJ</a>
+      <a href="#" data-filter="graffiti" class="tag-graffiti">Graffiti</a>
     </nav>
   </div>
 </header>
@@ -98,6 +100,22 @@
           <div class="catalog mono">HHK–019 · OBJETS</div>
           <h3>Le médaillon Afrique, bijou du hip-hop conscient</h3>
           <p class="dek">Symbole afrocentriste porté par KRS-One, Slick Rick et Native Tongues.</p>
+          <div class="meta mono">Lire l'article →</div>
+        </a>
+
+        <a href="article-dj-place-hip-hop.html" class="sleeve cat-dj" data-cat="dj">
+          <div class="cover-art"><img src="https://images.unsplash.com/photo-1601066525716-3cca33c6d4c6?auto=format&fit=crop&w=600&q=65" alt="Gros plan sur une platine vinyle" loading="lazy" width="600" height="150"></div>
+          <div class="catalog mono">HHK–029 · DJ</div>
+          <h3>La place du DJ dans le hip-hop</h3>
+          <p class="dek">Des block parties du Bronx à aujourd'hui.</p>
+          <div class="meta mono">Lire l'article →</div>
+        </a>
+
+        <a href="article-scratch-refrains-90-2000.html" class="sleeve cat-dj" data-cat="dj">
+          <div class="cover-art"><img src="https://images.unsplash.com/photo-1601066525716-3cca33c6d4c6?auto=format&fit=crop&w=600&q=65" alt="Gros plan sur une platine vinyle" loading="lazy" width="600" height="150"></div>
+          <div class="catalog mono">HHK–030 · DJ</div>
+          <h3>Le scratch dans les refrains, l'âge d'or 90-2000</h3>
+          <p class="dek">DJ Premier en fil rouge de cette technique devenue un art.</p>
           <div class="meta mono">Lire l'article →</div>
         </a>
 
@@ -233,6 +251,8 @@
     <li><a href="article-medaillon-afrique.html">Le médaillon Afrique, bijou du hip-hop conscient</a></li>
     <li><a href="article-adidas-superstar.html">Adidas Superstar, la sneaker culte du hip-hop</a></li>
     <li><a href="article-jbl-boombox.html">Le boombox, du ghetto-blaster au Bluetooth</a></li>
+    <li><a href="article-dj-place-hip-hop.html">La place du DJ dans le hip-hop</a></li>
+    <li><a href="article-scratch-refrains-90-2000.html">Le scratch dans les refrains, l'âge d'or 90-2000</a></li>
     <li><a href="article-exemple.html">Nas — Illmatic, réédition 30 ans en vinyle couleur</a></li>
     <li><a href="article-nas-it-was-written.html">Nas — It Was Written, le successeur d'Illmatic</a></li>
     <li><a href="article-big-pun-capital-punishment.html">Big Punisher — Capital Punishment, édition anniversaire</a></li>
@@ -246,7 +266,7 @@
 <footer class="site-footer">
   <div class="wrap">
     <span>© 2026 Hip-Hop Kingdom</span>
-    <span>Certains liens sont des liens d'affiliation</span>
+    
   </div>
 </footer>
 
@@ -272,7 +292,7 @@
   });
 
   var initial = (location.hash || '').replace('#','') || 'all';
-  var valid = ['all','vinyles','chroniques','livres','objets'];
+  var valid = ['all','vinyles','chroniques','livres','objets','dj','graffiti'];
   applyFilter(valid.indexOf(initial) > -1 ? initial : 'all');
 })();
 </script>
